@@ -18,9 +18,9 @@ For example:
 ```reason
 module Messages = {
   type username = string;
-  type clientToServer = 
+  type clientToServer =
   | Login(username);
-  type serverToClient = 
+  type serverToClient =
   | LoginSuccessful(username, bool);
 };
 module MyServer = BsSocket.Server.Make(Messages);
@@ -76,7 +76,7 @@ MyClient.emit(client, Login("user2157"));
 MyClient.emit(client, ChatMessage("hello"));
 
 // server
-MyServer.Socket.on(socket, msg => 
+MyServer.Socket.on(socket, msg =>
   switch(msg) {
   | Login(username) => ...
   | ChatMessage(msg) => ...
@@ -87,7 +87,7 @@ If you later extended the type of `clientToServer` to have another case, i.e.
 
 ```reason
 type username = string;
-type clientToServer = 
+type clientToServer =
   | Login(username)
   | ChatMessage(string)
   | Logout(username);
