@@ -9,7 +9,7 @@
   "namespace": true,
   "sources": [
     {
-      "dir": "src",
+      "dir": "src"
     },
     {
       "dir": "example",

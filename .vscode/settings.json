@@ -1,0 +1,7 @@
+{
+  "reason.codelens.enabled": true,
+  "reason_language_server.per_value_codelens": true,
+  "reason_language_server.reloadOnChange": true,
+  "reason_language_server.show_debug_errors": true,
+  "references.preferredLocation": "view"
+}
